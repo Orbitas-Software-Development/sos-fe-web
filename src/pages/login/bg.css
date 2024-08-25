@@ -1,0 +1,53 @@
+.bg {
+  background-image: url("/public/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tranform-down-up {
+  position: relative;
+  animation-name: floating-animation-down-up;
+  animation-duration: 3s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.tranform-up-down {
+  position: relative;
+  animation-name: floating-animation-up-down;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+@keyframes floating-animation-up-down {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+@keyframes floating-animation-down-up {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+.bg-login-img {
+  background-image: url("/public/wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
