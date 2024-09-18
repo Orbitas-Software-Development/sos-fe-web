@@ -82,7 +82,7 @@ export default function Home() {
             </motion.div>
           </div>
         </motion.div>
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center ">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}
