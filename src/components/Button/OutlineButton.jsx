@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function TextButton({
-  bgColor = "bg-black",
-  hoverBgColor = "hover:bg-gray-900",
+export default function OutlineButton({
+  bgColor = "bg-white",
+  outlineColor = "outline-black",
+  hoverOutlineColor = "hover:outline-gray-900",
   text,
-  textColor = "text-white",
+  textColor = "black",
   hoverTextColor = "hover:text-[#b38f00]",
   textSize = "text-lg",
   type = "button",
@@ -16,7 +17,7 @@ export default function TextButton({
 }) {
   return (
     <button
-      className={`${otherProperties} ${bgColor} ${hoverBgColor}  ${textSize}  ${textColor} ${hoverTextColor} ${width} shadow-md  rounded-sm w-full py-2 px-3  `}
+      className={`${otherProperties} ${textSize} ${bgColor} ${outlineColor} ${hoverOutlineColor}  ${textColor}  ${hoverTextColor} ${width}  rounded-[0.01px] w-full py-1 px-2  outline-2 outline-offset-2 outline`}
       type={type}
       disabled={disabled}
       autoComplete="off"
