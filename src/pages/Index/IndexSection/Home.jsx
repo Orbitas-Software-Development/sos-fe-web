@@ -90,6 +90,7 @@ export default function Home() {
               type: "spring",
               stiffness: 260,
               damping: 20,
+              delay: 0.5,
             }}
           >
             <img className="tranform-up-down" src="./sos_logo.png" alt="" />
