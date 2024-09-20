@@ -12,7 +12,6 @@ import Loading from "../../components/Loading/Loading";
 import TextButton from "../../components/Button/TextButton";
 import axios from "axios";
 
-import TodayGreeting from "../../components/TodayGreeting/TodayGreeting";
 const Login = () => {
   //local
   const [userCredentials, setUserCredentials] = useState({ companyId: 12 });
@@ -86,7 +85,7 @@ const Login = () => {
               {/*logos animations*/}
               <div className=" flex flex-row items-center ">
                 <div className="tranform-down-up">
-                  <img src="orbitas_logo.png" alt="orbitas-log" width={100} />{" "}
+                  <img src="orbitas_logo.png" alt="orbitas-log" width={100} />
                 </div>
                 <div className="my-1 tranform-up-down">
                   <img width={70} src="./sos_logo_black.png" alt="" />

@@ -33,9 +33,9 @@ const Navbar = () => {
 
   const [visibleMenu, setVisibleMenu] = useState(false);
   return (
-    <header className="fixed w-[100vw] ">
+    <header className="fixed w-[100vw] z-50">
       <motion.div variants={fadeInDown} initial="initial" animate="animate">
-        <nav className="flex justify-between items-center   shadow-md w-[100%] pc:px-20 movil:px-5 h-[85px] bg-white">
+        <nav className="flex justify-between items-center   shadow-md w-[100%] pc:px-20 movil:px-5 h-[85px] dots-background ">
           <div>
             <img
               className="w-20 cursor-pointer"
