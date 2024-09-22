@@ -38,7 +38,7 @@ const Navbar = () => {
         <nav className="flex justify-between items-center   shadow-md w-[100%] pc:px-20 movil:px-5 h-[85px] dots-background ">
           <div>
             <img
-              className="w-20 cursor-pointer"
+              className="w-[85px] cursor-pointer"
               src="./logo-sos-logo.png"
               alt="..."
             />
