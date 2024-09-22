@@ -59,8 +59,8 @@ const Navbar = () => {
                   <a className="hover:text-gray-500" href="#">
                     <OutlineButton
                       outlineColor="outline-white"
-                      hoverOutlineColor="hover:outline-[#b38f00]"
-                      text={"Acerca de"}
+                      hoverOutlineColor="hover:outline-[#C2AE4A]"
+                      text={"Inicio"}
                       hoverTextColor="text-black"
                       onClick={() => {}}
                     />
@@ -70,9 +70,9 @@ const Navbar = () => {
                   <a className="hover:text-gray-500" href="#">
                     <OutlineButton
                       outlineColor="outline-white"
-                      text={"Módulos"}
+                      text={"Beneficios"}
                       hoverTextColor="text-black"
-                      hoverOutlineColor="hover:outline-[#b38f00]"
+                      hoverOutlineColor="hover:outline-[#C2AE4A]"
                       onClick={() => {}}
                     />
                   </a>
@@ -83,7 +83,7 @@ const Navbar = () => {
                       outlineColor="outline-white"
                       text={"Descargar app"}
                       hoverTextColor="text-black"
-                      hoverOutlineColor="hover:outline-[#b38f00]"
+                      hoverOutlineColor="hover:outline-[#C2AE4A]"
                       onClick={() => {}}
                     />
                   </a>
@@ -94,18 +94,18 @@ const Navbar = () => {
                       outlineColor="outline-white"
                       text={"Explora"}
                       hoverTextColor="text-black"
-                      hoverOutlineColor="hover:outline-[#b38f00]"
+                      hoverOutlineColor="hover:outline-[#C2AE4A]"
                       onClick={() => {}}
                     />
                   </a>
-                </li>{" "}
+                </li>
                 <li>
                   <a className="hover:text-gray-500" href="#">
                     <OutlineButton
                       outlineColor="outline-white"
                       text={"Contáctenos"}
                       hoverTextColor="text-black"
-                      hoverOutlineColor="hover:outline-[#b38f00]"
+                      hoverOutlineColor="hover:outline-[#C2AE4A]"
                       onClick={() => {}}
                     />
                   </a>
@@ -122,7 +122,7 @@ const Navbar = () => {
               className="pc:hidden movil:block"
             />
           </div>
-        </nav>{" "}
+        </nav>
       </motion.div>
     </header>
   );

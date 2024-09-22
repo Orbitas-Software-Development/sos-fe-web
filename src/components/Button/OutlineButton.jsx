@@ -6,7 +6,7 @@ export default function OutlineButton({
   hoverOutlineColor = "hover:outline-gray-900",
   text,
   textColor = "black",
-  hoverTextColor = "hover:text-[#b38f00]",
+  hoverTextColor = "hover:text-[#C2AE4A]",
   textSize = "text-lg",
   type = "button",
   width = "w-[300px]",

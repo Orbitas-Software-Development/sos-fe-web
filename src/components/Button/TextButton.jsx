@@ -5,7 +5,7 @@ export default function TextButton({
   hoverBgColor = "hover:bg-gray-900",
   text,
   textColor = "text-white",
-  hoverTextColor = "hover:text-[#b38f00]",
+  hoverTextColor = "hover:text-[#C2AE4A]",
   textSize = "text-lg",
   type = "button",
   width = "w-[300px]",

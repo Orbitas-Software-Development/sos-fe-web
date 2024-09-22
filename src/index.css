@@ -55,13 +55,19 @@ body {
 
 /*Home background*/
 .home {
-  background-image: url("/backgroundhome.jpg");
+  background-image: url("black-white-details-moon-texture-concept.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 /*Home background*/
+.side-home-div {
+  background-image: url("/landscape_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .ten h1 {
   font-size: 34px;
@@ -120,7 +126,7 @@ body {
   appearance: none;
   border: none;
   cursor: pointer;
-  background-color: #2d2d2d;
+  background-color: #191919;
   color: #fff;
   border-radius: 5px;
   outline: none;
