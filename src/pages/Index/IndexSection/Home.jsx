@@ -75,7 +75,7 @@ export default function Home() {
               <div className=" w-full flex justify-center items-center ">
                 <div className="z-10 text-center flex flex-col justify-center items-center">
                   <p className="font-bold mx-4 text-center text-2xl">
-                    <mark class="px-2 text-white rounded bg-[#b38f00]">
+                    <mark class="px-2 py-1 text-white rounded bg-black">
                       Solución rápida y eficaz a cualquier problema
                     </mark>
                   </p>
@@ -101,7 +101,7 @@ export default function Home() {
                   >
                     <div className=" mt-6">
                       <p className="font-bold mx-4 mb-4 text-center text-2xl z-10 ">
-                        <mark class="px-2 text-white rounded bg-[#b38f00]">
+                        <mark class="px-2 py-1 text-white rounded bg-[#b38f00]">
                           Síguenos
                         </mark>
                       </p>
@@ -144,7 +144,7 @@ export default function Home() {
               delay: 0.5,
             }}
           >
-            <img src="./sos_logo.png" alt="" />
+            <img src="./logo-sos-name.png" alt="" />
           </motion.div>
         </div>
         <div className="w-full flex justify-end items-end"></div>

@@ -39,7 +39,7 @@ const Navbar = () => {
           <div>
             <img
               className="w-20 cursor-pointer"
-              src="./orbitas_logo.png"
+              src="./logo-sos-logo.png"
               alt="..."
             />
           </div>
