@@ -56,7 +56,7 @@ export default function Home() {
     },
   };
   return (
-    <div className="home h-[100vh] w-[100vw]" id="home ">
+    <div className="home h-[100vh] w-[100vw] border-b-4 " id="home ">
       <div className="grid grid-cols-3 gap-3 ">
         <motion.div
           variants={fade}
@@ -64,7 +64,7 @@ export default function Home() {
           animate="animate"
           className="flex justify-items-end items-end  h-[100vh] "
         >
-          <div className="flex justify-evenly items-center h-[100vh] w-full bg-white flex-col side-home-div shadow-lg">
+          <div className="flex justify-evenly items-center h-[100vh] w-full bg-white flex-col side-home-div shadow-r-lg  border-r-4 border-b-4">
             <motion.div
               variants={{
                 ...fade,

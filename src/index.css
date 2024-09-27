@@ -37,7 +37,7 @@ body {
 .progress-wheel {
   position: fixed;
   top: 100px;
-  left: 20px;
+  right: 20px;
   transform: rotate(-90deg);
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .progress-wheel .progress {
-  stroke: var(--accent);
+  stroke: black;
   stroke-dasharray: 0, 1;
 }
 /*Progress-bar*/
@@ -56,6 +56,7 @@ body {
 /*Home background*/
 .home {
   background-image: url("/step-moon-texture.jpg");
+  /*https://www.freepik.com/free-photo/foot-step-details-moon-texture-concept_29662124.htm#fromView=search&page=1&position=3&uuid=23f9f30e-ba28-4925-9547-8113eb7ef553*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,11 +65,27 @@ body {
 /*Home background*/
 .side-home-div {
   background-image: url("/landscape_background.jpg");
+  /*https://www.freepik.com/free-vector/landscape-background-with-abstract-topography-map-design_65096438.htm#fromView=search&page=1&position=18&uuid=364ddf37-66b5-4441-8f38-0b07f4536ed1*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+.side-download-div {
+  background-image: url("/05809487-removebg-preview.png"),
+    url("/landscape_background.jpg");
+  /*https://www.freepik.com/free-vector/landscape-background-with-abstract-topography-map-design_65096438.htm#fromView=search&page=1&position=18&uuid=364ddf37-66b5-4441-8f38-0b07f4536ed1*/
 
+  background-position: center;
+  background-size: cover;
+}
+/*.side-download-div {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url("/05809487.jpg");
+  /*https://www.freepik.com/free-vector/landscape-background-with-abstract-topography-map-design_65096438.htm#fromView=search&page=1&position=18&uuid=364ddf37-66b5-4441-8f38-0b07f4536ed1
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}*/
 .ten h1 {
   font-size: 34px;
   font-weight: 500;
@@ -128,7 +145,7 @@ body {
   cursor: pointer;
   background-color: #191919;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
   outline: none;
   margin: 0;
 

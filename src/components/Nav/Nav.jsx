@@ -56,58 +56,28 @@ const Navbar = () => {
             <div className="nav-links duration-500 pc:static movil:absolute bg-red pc:min-h-fit movil:min-h-[60vh] left-0 top-[85px]  pc:w-auto  movil:w-full flex items-center px-5 ">
               <ul className="flex pc:flex-row movil:flex-col pc:items-center movil:items-start pc:gap-[4vw] movil:gap-8">
                 <li>
-                  <a className="hover:text-gray-500" href="#">
-                    <OutlineButton
-                      outlineColor="outline-white"
-                      hoverOutlineColor="hover:outline-[#C2AE4A]"
-                      text={"Inicio"}
-                      hoverTextColor="text-black"
-                      onClick={() => {}}
-                    />
+                  <a className="" href="#">
+                    <TextButton text={"Inicio"} onClick={() => {}} />
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-gray-500" href="#">
-                    <OutlineButton
-                      outlineColor="outline-white"
-                      text={"Beneficios"}
-                      hoverTextColor="text-black"
-                      hoverOutlineColor="hover:outline-[#C2AE4A]"
-                      onClick={() => {}}
-                    />
+                  <a className="" href="#">
+                    <TextButton text={"Beneficios"} onClick={() => {}} />
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-gray-500" href="#">
-                    <OutlineButton
-                      outlineColor="outline-white"
-                      text={"Descargar app"}
-                      hoverTextColor="text-black"
-                      hoverOutlineColor="hover:outline-[#C2AE4A]"
-                      onClick={() => {}}
-                    />
+                  <a className="" href="#">
+                    <TextButton text={"Descargar app"} onClick={() => {}} />
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-gray-500" href="#">
-                    <OutlineButton
-                      outlineColor="outline-white"
-                      text={"Explora"}
-                      hoverTextColor="text-black"
-                      hoverOutlineColor="hover:outline-[#C2AE4A]"
-                      onClick={() => {}}
-                    />
+                  <a className="" href="#">
+                    <TextButton text={"Explora"} onClick={() => {}} />
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-gray-500" href="#">
-                    <OutlineButton
-                      outlineColor="outline-white"
-                      text={"Contáctenos"}
-                      hoverTextColor="text-black"
-                      hoverOutlineColor="hover:outline-[#C2AE4A]"
-                      onClick={() => {}}
-                    />
+                  <a className="" href="#">
+                    <TextButton text={"Contáctenos"} onClick={() => {}} />
                   </a>
                 </li>
               </ul>
