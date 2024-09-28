@@ -163,7 +163,7 @@ export default function Download() {
                       E
                     </marker>
                     scoje tu plataforma{" "}
-                    <marker className="bg-black px-2 rounded text-white">
+                    <marker className="bg-black px-2 rounded text-white ">
                       favorita
                     </marker>
                   </p>
@@ -175,9 +175,10 @@ export default function Download() {
                     <MotionGesture>
                       <TextButton
                         text={"iOS"}
-                        bgColor="bg-white"
-                        textColor=" bg-gray-300"
+                        bgColor="bg-slate-200"
+                        textColor="bg-black"
                         icon={faApple}
+                        otherProperties="font-bold"
                       />
                     </MotionGesture>
                   </div>
@@ -191,6 +192,8 @@ export default function Download() {
                         text={"Android"}
                         bgColor="bg-green-500"
                         icon={faAndroid}
+                        textColor="bg-black"
+                        otherProperties="font-bold"
                       />
                     </MotionGesture>
                   </div>
