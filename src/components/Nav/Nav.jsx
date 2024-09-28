@@ -39,7 +39,7 @@ const Navbar = () => {
           <div>
             <img
               className="w-[85px] cursor-pointer"
-              src="./logo-sos-logo.png"
+              src="./logo-sos-name.png"
               alt="..."
             />
           </div>
@@ -67,7 +67,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a className="" href="#">
-                    <TextButton text={"Descargar app"} onClick={() => {}} />
+                    <TextButton text={"Descargar SOS"} onClick={() => {}} />
                   </a>
                 </li>
                 <li>

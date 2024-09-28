@@ -1,13 +1,14 @@
-import React from "react";
+import { React, useState } from "react";
 import Reveal from "../../../components/Reveal";
 import RevealWithoutDivEffect from "../../../components/RevealWithoutDivEffect";
 import { motion, useScroll } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagramSquare,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
+
+import { faAndroid, faApple } from "@fortawesome/free-brands-svg-icons";
+
+import TextButton from "../../../components/Button/TextButton";
+import MotionGesture from "../../../components/Motion/MotionGesture";
 export default function Download() {
+  const [platformImage, setPlatformImage] = useState("");
   const fadeInRight = {
     initial: {
       x: "-100%",
@@ -52,7 +53,7 @@ export default function Download() {
     },
   };
   return (
-    <div className="h-[100vh] w-[100vw]  bg-white-100  features">
+    <div className="h-[100vh] w-[100vw]  bg-white-100  download">
       <div className="grid grid-cols-3 gap-3  border-4">
         <motion.div
           variants={fade}
@@ -96,7 +97,7 @@ export default function Download() {
             >
               <p className="text-6xl text-center font-extrabold typed-container   leading-tight">
                 <marker className="bg-[#C2AE4A] px-2 rounded">
-                  Descarga SOS
+                  Descargar SOS
                 </marker>
               </p>
             </motion.div>{" "}
@@ -146,8 +147,89 @@ export default function Download() {
           </div>
         </motion.div>
 
-        <div className=""></div>
-        <div className=""></div>
+        <div className=" flex justify-center items-center">
+          <div className=" flex justify-center items-center flex-col ">
+            {" "}
+            <div className="z-10">
+              <motion.div
+                variants={fadeScale}
+                initial="initial"
+                animate="animate"
+              >
+                <p className="font-bold mx-1 my-6 text-center text-4xl leading-tight"></p>
+                <div className="flex justify-center flex-col items-center">
+                  <p className="text-5xl text-center font-extrabold typed-container   leading-tight">
+                    <marker className="bg-black px-2 rounded text-white">
+                      E
+                    </marker>
+                    scoje tu plataforma{" "}
+                    <marker className="bg-black px-2 rounded text-white">
+                      favorita
+                    </marker>
+                  </p>
+                  <div
+                    className="mt-6 w-[150px]"
+                    onMouseEnter={() => setPlatformImage("/ios-logo.png")}
+                  >
+                    {/*https://es.vecteezy.com/arte-vectorial/21496368-ios-icono-logo-software-telefono-manzana-simbolo-con-nombre-negro-diseno-movil-vector-ilustracion*/}
+                    <MotionGesture>
+                      <TextButton
+                        text={"iOS"}
+                        bgColor="bg-white"
+                        textColor=" bg-gray-300"
+                        icon={faApple}
+                      />
+                    </MotionGesture>
+                  </div>
+                  <div
+                    className=" mt-6 w-[150px]"
+                    onMouseEnter={() => setPlatformImage("/android-logo.png")}
+                  >
+                    {/* }https://es.m.wikipedia.org/wiki/Archivo:Android_logo_2019_%28stacked%29.svg*/}
+                    <MotionGesture>
+                      <TextButton
+                        text={"Android"}
+                        bgColor="bg-green-500"
+                        icon={faAndroid}
+                      />
+                    </MotionGesture>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+            <div className="absolute z-0 m-0 p-0">
+              <motion.div
+                variants={{
+                  ...fadeScale,
+                  animate: {
+                    opacity: 1,
+                    scale: 1,
+                    transition: {
+                      duration: "0.55",
+                      delay: 0.9,
+                      ease: "easeInOut",
+                    },
+                  },
+                }}
+                initial="initial"
+                animate="animate"
+              >
+                {/*  <a href="https://storyset.com/rocket" className="text-[9px]">
+                Rocket illustrations by Storyset
+              </a>*/}
+              </motion.div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center items-center">
+          {" "}
+          <img
+            className="tranform-up-down"
+            width={550}
+            src={platformImage}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

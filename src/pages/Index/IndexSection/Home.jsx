@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import Typed from "typed.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MotionGesture from "../../../components/Motion/MotionGesture";
 import {
   faInstagramSquare,
   faFacebook,
@@ -130,17 +131,21 @@ export default function Home() {
                         </mark>
                       </p>
                       <div className="flex ">
-                        <div className="text-center mx-4 hover:animate-bounce text-xl">
-                          <FontAwesomeIcon
-                            icon={faInstagramSquare}
-                            size="2xl"
-                          />
-                          <p className="font-bold">Instagram</p>
-                        </div>
-                        <div className="text-center mx-4 hover:animate-bounce  text-xl">
-                          <FontAwesomeIcon icon={faFacebook} size="2xl" />{" "}
-                          <p className="font-bold">Facebook</p>
-                        </div>
+                        <MotionGesture>
+                          <div className="text-center mx-4  text-xl cursor-pointer">
+                            <FontAwesomeIcon
+                              icon={faInstagramSquare}
+                              size="2xl"
+                            />
+                            <p className="font-bold">Instagram</p>
+                          </div>
+                        </MotionGesture>
+                        <MotionGesture>
+                          <div className="text-center mx-4 text-xl cursor-pointer">
+                            <FontAwesomeIcon icon={faFacebook} size="2xl" />{" "}
+                            <p className="font-bold">Facebook</p>
+                          </div>
+                        </MotionGesture>
                       </div>
                     </div>
                   </motion.div>

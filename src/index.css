@@ -40,7 +40,9 @@ body {
   right: 20px;
   transform: rotate(-90deg);
 }
-
+.stroke-text {
+  -webkit-text-stroke: 0.01px rgb(255, 255, 255);
+}
 .progress-wheel circle {
   stroke-dashoffset: 0;
   stroke-width: 30%;
@@ -57,6 +59,15 @@ body {
 .home {
   background-image: url("/step-moon-texture.jpg");
   /*https://www.freepik.com/free-photo/foot-step-details-moon-texture-concept_29662124.htm#fromView=search&page=1&position=3&uuid=23f9f30e-ba28-4925-9547-8113eb7ef553*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*Features*/
+.download {
+  background-image: url("/v907-aum-21.jpg");
+  /*https://www.freepik.com/free-vector/outer-space-doodle-background_16339010.htm#from_view=detail_alsolike*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

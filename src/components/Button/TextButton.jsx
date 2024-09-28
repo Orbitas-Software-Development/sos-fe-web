@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function TextButton({
   bgColor = "bg-black",
   hoverBgColor = "hover:bg-gray-900",
@@ -13,6 +13,7 @@ export default function TextButton({
   onClick = () => alert("onClick"),
   onChange = () => alert("No onChange"),
   disabled = false,
+  icon,
 }) {
   return (
     <button
@@ -24,6 +25,7 @@ export default function TextButton({
       onClick={onClick}
     >
       {text}
+      <FontAwesomeIcon icon={icon} className="ml-2" size="lg" />
     </button>
   );
 }

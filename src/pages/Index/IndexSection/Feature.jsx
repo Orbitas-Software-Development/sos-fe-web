@@ -3,7 +3,7 @@ import Reveal from "../../../components/Reveal";
 import RevealWithoutDivEffect from "../../../components/RevealWithoutDivEffect";
 export default function Feature() {
   return (
-    <div className="h-auto w-[100vw] flex justify-start items-center flex-col bg-white-100  py-[100px] features">
+    <div className="h-auto w-[100vw] flex justify-start items-center flex-col bg-white-100  py-[100px] ">
       <div className="flex justify-center items-center ">
         <Reveal>
           <div class="ten">
@@ -15,17 +15,17 @@ export default function Feature() {
         <div className="flex-1  flex justify-center items-center">
           <div className="w-[300px] ">
             <RevealWithoutDivEffect>
-              <img src="Service 24_7-rafiki.png" alt="" />{" "}
+              <img src="Service 24_7-rafiki.png" alt="" />
               {/* https://storyset.com/illustration/service-247/rafiki*/}
             </RevealWithoutDivEffect>
-            <Reveal>
+            <Reveal bgColor="--black">
               <div>
                 <h1 className="text-center text-2xl font-bold ">
                   Servicio las 24 horas
                 </h1>{" "}
               </div>
             </Reveal>{" "}
-            <Reveal>
+            <Reveal bgColor="--black">
               <div>
                 <p className="text-xl text-center">
                   Puedes contactar a un técnico cuando lo necesites
@@ -40,14 +40,14 @@ export default function Feature() {
               <img src="Manage money-pana.png" alt="" />{" "}
               {/*https://storyset.com/illustration/manage-money/pana*/}
             </RevealWithoutDivEffect>
-            <Reveal>
+            <Reveal bgColor="--black">
               <div>
                 <h1 className="text-center text-2xl font-bold">
                   Servicio de calidad al mejor precio
                 </h1>{" "}
               </div>{" "}
             </Reveal>{" "}
-            <Reveal>
+            <Reveal bgColor="--black">
               <div>
                 {" "}
                 <p className="text-xl text-center">
@@ -63,14 +63,14 @@ export default function Feature() {
               <img src="Performance overview-amico.png" alt="" />
               {/*https://storyset.com/illustration/fast-loading/rafiki*/}
             </RevealWithoutDivEffect>
-            <Reveal>
+            <Reveal bgColor="--black">
               <div>
                 <h1 className="text-center text-2xl font-bold">
                   Rapidéz y eficiencia en el servicio
                 </h1>
               </div>{" "}
             </Reveal>{" "}
-            <Reveal>
+            <Reveal bgColor="--black">
               <div>
                 <p className="text-xl text-center">
                   La mejor solución en el menor tiempo

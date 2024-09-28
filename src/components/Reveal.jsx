@@ -1,7 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-export default function Reveal({ children, width = "fit-content" }) {
+export default function Reveal({
+  children,
+  width = "fit-content",
+  bgColor = "--gold",
+}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -40,7 +44,7 @@ export default function Reveal({ children, width = "fit-content" }) {
           bottom: 4,
           left: 0,
           right: 0,
-          background: "var(--background-color,#b38f00)",
+          background: `var(${bgColor})`,
           zIndex: 20,
         }}
       />
