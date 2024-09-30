@@ -18,3 +18,23 @@ export const validateExistedValue = (array, string, property) => {
   });
   return existed;
 };
+
+export const setHomeBackground = (array, string, property) => {
+  const images = [
+    "/step-moon-texture.jpg",
+    "/top-view-steel-hammer-with-other-construction-elements-tools.jpg",
+    "/tools-art-repairing-paint-space-text.jpg",
+    "/someone-s-hand-holding-spanner.jpg",
+    "/portrait-craftsman.jpg",
+  ];
+  let index = 0;
+
+  setInterval(function () {
+    if (index === 4) index = -1;
+    if (index != 4) index++;
+    console.log(index);
+    document.getElementById(
+      "home"
+    ).style.backgroundImage = `url(${images[index]})`;
+  }, 5000);
+};

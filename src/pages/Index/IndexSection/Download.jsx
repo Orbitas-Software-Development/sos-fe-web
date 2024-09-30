@@ -8,7 +8,7 @@ import { faAndroid, faApple } from "@fortawesome/free-brands-svg-icons";
 import TextButton from "../../../components/Button/TextButton";
 import MotionGesture from "../../../components/Motion/MotionGesture";
 export default function Download() {
-  const [platformImage, setPlatformImage] = useState("");
+  const [platformImage, setPlatformImage] = useState("./Online world-bro.png");
   const fadeInRight = {
     initial: {
       x: "-100%",
@@ -53,15 +53,15 @@ export default function Download() {
     },
   };
   return (
-    <div className="h-[100vh] w-[100vw]  bg-white-100  download">
-      <div className="grid grid-cols-3 gap-3  border-4">
+    <div className="h-[100vh] w-[100vw]  bg-white-100  download ">
+      <div className="grid grid-cols-3 gap-3  ">
         <motion.div
           variants={fade}
           initial="initial"
           animate="animate"
           className="flex justify-items-end items-end  h-[100vh] "
         >
-          <div className="flex justify-evenly items-center h-[100vh] w-full bg-white flex-col side-download-div shadow-r-lg   border-r-4">
+          <div className="flex justify-evenly items-center h-[100vh] w-full bg-white flex-col side-download-div shadow-r-lg   ">
             <motion.div
               variants={{
                 ...fade,
@@ -95,11 +95,21 @@ export default function Download() {
               initial="initial"
               animate="animate"
             >
-              <p className="text-6xl text-center font-extrabold typed-container   leading-tight">
-                <marker className="bg-[#C2AE4A] px-2 rounded">
-                  Descargar SOS
-                </marker>
-              </p>
+              <Reveal bgColor="--black">
+                <p className="text-6xl text-center font-extrabold typed-container   leading-tight">
+                  <marker className="bg-[#C2AE4A] px-2 rounded">
+                    Descargar SOS
+                  </marker>
+                </p>
+              </Reveal>
+              <div className="h-[300px] flex justify-center items-center">
+                <img
+                  className="tranform-up-down relative"
+                  width={300}
+                  src={platformImage}
+                  alt=""
+                />
+              </div>
             </motion.div>{" "}
             <motion.div variants={fade} initial="initial" animate="animate">
               <div className=" w-full flex justify-center items-center ">
@@ -158,45 +168,53 @@ export default function Download() {
               >
                 <p className="font-bold mx-1 my-6 text-center text-4xl leading-tight"></p>
                 <div className="flex justify-center flex-col items-center">
-                  <p className="text-5xl text-center font-extrabold typed-container   leading-tight">
-                    <marker className="bg-black px-2 rounded text-white">
-                      E
-                    </marker>
-                    scoje tu plataforma{" "}
-                    <marker className="bg-black px-2 rounded text-white ">
-                      favorita
-                    </marker>
-                  </p>
-                  <div
-                    className="mt-6 w-[150px]"
-                    onMouseEnter={() => setPlatformImage("/ios-logo.png")}
-                  >
-                    {/*https://es.vecteezy.com/arte-vectorial/21496368-ios-icono-logo-software-telefono-manzana-simbolo-con-nombre-negro-diseno-movil-vector-ilustracion*/}
-                    <MotionGesture>
-                      <TextButton
-                        text={"iOS"}
-                        bgColor="bg-slate-200"
-                        textColor="bg-black"
-                        icon={faApple}
-                        otherProperties="font-bold"
-                      />
-                    </MotionGesture>
-                  </div>
-                  <div
-                    className=" mt-6 w-[150px]"
-                    onMouseEnter={() => setPlatformImage("/android-logo.png")}
-                  >
-                    {/* }https://es.m.wikipedia.org/wiki/Archivo:Android_logo_2019_%28stacked%29.svg*/}
-                    <MotionGesture>
-                      <TextButton
-                        text={"Android"}
-                        bgColor="bg-green-500"
-                        icon={faAndroid}
-                        textColor="bg-black"
-                        otherProperties="font-bold"
-                      />
-                    </MotionGesture>
-                  </div>
+                  <Reveal>
+                    <p className="text-5xl text-center font-extrabold typed-container   leading-tight">
+                      <marker className="bg-black px-2 rounded text-white">
+                        E
+                      </marker>
+                      scoje tu plataforma{" "}
+                      <marker className="bg-black px-2 rounded text-white ">
+                        favorita
+                      </marker>
+                    </p>
+                  </Reveal>{" "}
+                  <RevealWithoutDivEffect>
+                    <div
+                      className="mt-6 w-[150px]"
+                      onMouseEnter={() => setPlatformImage("/ios-logo.png")}
+                    >
+                      {/*https://es.vecteezy.com/arte-vectorial/21496368-ios-icono-logo-software-telefono-manzana-simbolo-con-nombre-negro-diseno-movil-vector-ilustracion*/}
+
+                      <MotionGesture>
+                        <TextButton
+                          text={"iOS"}
+                          bgColor="bg-slate-200"
+                          textColor="bg-black"
+                          icon={faApple}
+                          otherProperties="font-bold"
+                        />
+                      </MotionGesture>
+                    </div>{" "}
+                  </RevealWithoutDivEffect>{" "}
+                  <RevealWithoutDivEffect>
+                    <div
+                      className=" mt-6 w-[150px]"
+                      onMouseEnter={() => setPlatformImage("/android-logo.png")}
+                    >
+                      {/* }https://es.m.wikipedia.org/wiki/Archivo:Android_logo_2019_%28stacked%29.svg*/}
+
+                      <MotionGesture>
+                        <TextButton
+                          text={"Android"}
+                          bgColor="bg-green-500"
+                          icon={faAndroid}
+                          textColor="bg-black"
+                          otherProperties="font-bold"
+                        />
+                      </MotionGesture>
+                    </div>{" "}
+                  </RevealWithoutDivEffect>
                 </div>
               </motion.div>
             </div>
@@ -224,15 +242,7 @@ export default function Download() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          {" "}
-          <img
-            className="tranform-up-down"
-            width={550}
-            src={platformImage}
-            alt=""
-          />
-        </div>
+        <div className="flex justify-center items-center"> </div>
       </div>
     </div>
   );

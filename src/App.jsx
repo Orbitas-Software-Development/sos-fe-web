@@ -6,6 +6,7 @@ import "./App.css";
 }
 
 import IndexSection from "./pages/Index/IndexLanding";
+import Footer from "./pages/Footer/Footer";
 import { scroll } from "framer-motion/dom";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <circle cx="50" cy="50" r="30" pathLength="1" className="progress" />
       </svg>
       <IndexSection />
+      <Footer />
     </>
   );
 }

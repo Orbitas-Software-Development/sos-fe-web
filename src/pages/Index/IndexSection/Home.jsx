@@ -1,4 +1,5 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
+import { setHomeBackground } from "../../../utils/utils";
 import { motion, useScroll } from "framer-motion";
 import Typed from "typed.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,8 +11,10 @@ import {
 import ThreeDButton from "../../../components/Button/ThreeDButton";
 
 export default function Home() {
+  const [astronautImage, setAstronautImage] = useState("./astronaut-1.png");
   useEffect(() => {
     window.scrollTo({ top: 0 });
+    setHomeBackground();
   }, []);
   const fadeInRight = {
     initial: {
@@ -57,7 +60,7 @@ export default function Home() {
     },
   };
   return (
-    <div className="home h-[100vh] w-[100vw] border-b-4 " id="home ">
+    <div className="home h-[100vh] w-[100vw] " id="home">
       <div className="grid grid-cols-3 gap-3 ">
         <motion.div
           variants={fade}
@@ -65,7 +68,7 @@ export default function Home() {
           animate="animate"
           className="flex justify-items-end items-end  h-[100vh] "
         >
-          <div className="flex justify-evenly items-center h-[100vh] w-full bg-white flex-col side-home-div shadow-r-lg  border-r-4 border-b-4">
+          <div className="flex justify-evenly items-center h-[100vh] w-full bg-white flex-col side-home-div shadow-r-lg  border-r-4 ">
             <motion.div
               variants={{
                 ...fade,
@@ -101,8 +104,8 @@ export default function Home() {
             >
               <p className="text-6xl text-center font-extrabold typed-container   leading-tight">
                 <marker className="bg-[#C2AE4A] px-2 rounded">E</marker>ncuentra
-                los mejores servicios en{" "}
-                <marker className="bg-[#C2AE4A] px-2 rounded">SOS</marker>
+                los mejores servicios y contratistas en
+                <marker className="bg-[#C2AE4A] ml-3 px-2 rounded">SOS</marker>
               </p>
             </motion.div>{" "}
             <motion.div variants={fade} initial="initial" animate="animate">
@@ -192,12 +195,10 @@ export default function Home() {
               <img
                 className="tranform-up-down"
                 width={500}
-                src="/Outer space-cuate.png"
+                src={astronautImage}
                 alt=""
               />
-              {/*  <a href="https://storyset.com/rocket" className="text-[9px]">
-                Rocket illustrations by Storyset
-              </a>*/}
+              {/*  https://storyset.com/illustration/astronaut-suit/pana*/}
             </motion.div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Reveal from "../../../components/Reveal";
 import RevealWithoutDivEffect from "../../../components/RevealWithoutDivEffect";
 export default function Feature() {
   return (
-    <div className="h-auto w-[100vw] flex justify-start items-center flex-col bg-white-100  py-[100px] ">
+    <div className="h-auto w-[100vw] flex justify-start items-center flex-col bg-white-100  py-[100px] border-4 ">
       <div className="flex justify-center items-center ">
         <Reveal>
           <div class="ten">
