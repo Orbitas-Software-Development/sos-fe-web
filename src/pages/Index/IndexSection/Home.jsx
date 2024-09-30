@@ -60,8 +60,9 @@ export default function Home() {
     },
   };
   return (
-    <div className="home h-[100vh] w-[100vw] " id="home">
-      <div className="grid grid-cols-3 gap-3 ">
+    <div className=" h-[100vh] w-[100vw] ">
+      <div className="home w-full h-full absolute -z-10" id="home"></div>
+      <div className="grid grid-cols-3 gap-3 z-10">
         <motion.div
           variants={fade}
           initial="initial"

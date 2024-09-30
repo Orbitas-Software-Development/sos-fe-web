@@ -64,14 +64,19 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-#home {
-  background-image: url("/step-moon-texture.jpg");
-  /*https://www.freepik.com/free-photo/foot-step-details-moon-texture-concept_29662124.htm#fromView=search&page=1&position=3&uuid=23f9f30e-ba28-4925-9547-8113eb7ef553*/
-  background-repeat: no-repeat;
   background-position: bottom -200px right;
-  background-size: cover;
-  background-attachment: fixed;
+}
+.home {
+  -webkit-animation: fade 5s infinite;
+  -moz-animation: fade 5s infinite;
+  -o-animation: fade 5s infinite;
+  animation: fade 5s infinite;
+
+  transition: all 0.2s ease;
+  -webkit-animation: fade 5s infinite;
+  -moz-animation: fade 5s infinite;
+  -o-animation: fade 5s infinite;
+  animation: fade 5s infinite;
 }
 /*Features*/
 .download {
@@ -512,5 +517,51 @@ body {
   100% {
     transform: none;
     opacity: 0.25;
+  }
+}
+/******************/
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

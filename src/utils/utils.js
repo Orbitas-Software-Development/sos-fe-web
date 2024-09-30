@@ -24,14 +24,14 @@ export const setHomeBackground = (array, string, property) => {
     "/step-moon-texture.jpg",
     "/top-view-steel-hammer-with-other-construction-elements-tools.jpg",
     "/tools-art-repairing-paint-space-text.jpg",
-    "/someone-s-hand-holding-spanner.jpg",
+
     "/portrait-craftsman.jpg",
   ];
   let index = 0;
 
   setInterval(function () {
-    if (index === 4) index = -1;
-    if (index != 4) index++;
+    if (index === 3) index = -1;
+    if (index != 3) index++;
     console.log(index);
     document.getElementById(
       "home"
