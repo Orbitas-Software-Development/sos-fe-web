@@ -65,7 +65,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: right;
-  /* image-rendering: pixelated;*/
+  image-rendering: pixelated;
 }
 
 .home {
