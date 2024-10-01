@@ -22,16 +22,17 @@ export const validateExistedValue = (array, string, property) => {
 export const setHomeBackground = (array, string, property) => {
   const images = [
     "/step-moon-texture.jpg",
-    "/top-view-steel-hammer-with-other-construction-elements-tools.jpg",
-    "/tools-art-repairing-paint-space-text.jpg",
-
-    "/portrait-craftsman.jpg",
+    "/man-overall-smiling-with-crossed-arms.jpeg",
+    "/portrait-craftman.jpeg",
+    "/portrait-painter.jpeg",
+    "/portrait-craftman-2.jpeg",
+    ,
   ];
   let index = 0;
 
   setInterval(function () {
-    if (index === 3) index = -1;
-    if (index != 3) index++;
+    if (index === 4) index = -1;
+    if (index != 4) index++;
     console.log(index);
     document.getElementById(
       "home"

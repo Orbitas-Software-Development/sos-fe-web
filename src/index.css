@@ -64,8 +64,10 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-position: bottom -200px right;
+  background-position: right;
+  /* image-rendering: pixelated;*/
 }
+
 .home {
   -webkit-animation: fade 5s infinite;
   -moz-animation: fade 5s infinite;
@@ -155,9 +157,6 @@ body {
 .dots-background a {
   text-decoration: none;
   color: var(--accent);
-}
-.z0 {
-  z-index: 0 !important;
 }
 
 /*3d button*/
